@@ -2,6 +2,8 @@
 
 A plugin that show the current file on NERDtree
 
+[![asciicast](https://asciinema.org/a/124434.png)](https://asciinema.org/a/124434)
+
 ## Install
 
 *  [Pathogen](https://github.com/tpope/vim-pathogen)  
