@@ -1,6 +1,6 @@
 # vim-nerdtree-sync
 
-A plugin that show the current file on NERDtree
+A plugin that show the current file on [NERDtree](https://github.com/scrooloose/nerdtree)
 
 ![example](https://www.dropbox.com/s/z0ywlg0ov5f5nps/vim-nerdtree-sync-cast.gif?dl=1)
 
@@ -17,6 +17,15 @@ A plugin that show the current file on NERDtree
 
 *  [Vundle](https://github.com/gmarik/vundle)  
 ```Plugin 'unkiwii/vim-nerdtree-sync'```
+
+## How it works
+
+After open a file, if NERDTree is open, it will show that file in NERDTree window. If you have `cursorline` enabled it will also highlight the file.
+If you don't have `cursorline` setted or don't want to set it you can configure the plugin to highlight the file:
+```
+let g:nerdtree_sync_cursorline = 1
+```
+That will run `setlocal cursorline` in the NERDTree window
 
 ## Credits
 
