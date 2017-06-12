@@ -2,7 +2,7 @@
 
 A plugin that show the current file on NERDtree
 
-![example](https://www.dropbox.com/s/z0ywlg0ov5f5nps/vim-nerdtree-sync-cast.gif?dl=0)
+![example](https://www.dropbox.com/s/z0ywlg0ov5f5nps/vim-nerdtree-sync-cast.gif?dl=1)
 
 ## Install
 
