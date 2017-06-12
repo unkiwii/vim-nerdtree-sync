@@ -5,13 +5,16 @@ A plugin that show the current file on NERDtree
 ## Install
 
 *  [Pathogen](https://github.com/tpope/vim-pathogen)
-  * `git clone https://github.com/unkiwii/vim-nerdtree-sync.git ~/.vim/bundle/vim-nerdtree-sync`
+```git clone https://github.com/unkiwii/vim-nerdtree-sync.git ~/.vim/bundle/vim-nerdtree-sync```
+
 *  [vim-plug](https://github.com/junegunn/vim-plug)
-  * `Plug 'unkiwii/vim-nerdtree-sync'`
+```Plug 'unkiwii/vim-nerdtree-sync'```
+
 *  [NeoBundle](https://github.com/Shougo/neobundle.vim)
-  * `NeoBundle 'unkiwii/vim-nerdtree-sync'`
+```NeoBundle 'unkiwii/vim-nerdtree-sync'```
+
 *  [Vundle](https://github.com/gmarik/vundle)
-  * `Plugin 'unkiwii/vim-nerdtree-sync'`
+```Plugin 'unkiwii/vim-nerdtree-sync'```
 
 ## Credits
 
