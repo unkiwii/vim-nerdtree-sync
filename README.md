@@ -25,6 +25,10 @@ If you don't have `cursorline` setted or don't want to set it you can configure 
 ```
 let g:nerdtree_sync_cursorline = 1
 ```
+Or configure NERDTree to always show the cursorline:
+```
+let g:NERDTreeHighlightCursorline = 1
+```
 That will run `setlocal cursorline` in the NERDTree window
 
 ## Credits
