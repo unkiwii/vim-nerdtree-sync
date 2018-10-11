@@ -12,8 +12,8 @@ endfunction
 
 " calls NERDTreeFind iff NERDTree is active, current window contains a modifiable file, and we're not in vimdiff
 function! s:syncTree()
-  if &modifiable && s:isNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff && bufname('%') !~# 'NERD_tree'
-    if exists("g:nerdtree_sync_cursorline") && g:nerdtree_sync_cursorline == 1
+  if exists("g:nerdtree_sync_cursorline") && g:nerdtree_sync_cursorline == 1
+    if &modifiable && s:isNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff && bufname('%') !~# 'NERD_tree'
       try
         NERDTreeFind
         if bufname('%') =~# 'NERD_tree'
