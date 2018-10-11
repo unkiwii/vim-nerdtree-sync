@@ -2,7 +2,7 @@ if exists("g:loaded_nerdtree_sync") || &cp
   finish
 endif
 
-let g:loaded_nerdtree_sync = 3  " plugin version
+let g:loaded_nerdtree_sync = 4  " plugin version
 let s:keepcpo = &cpo
 set cpo&vim
 
@@ -14,9 +14,11 @@ endfunction
 function! s:syncTree()
   if &modifiable && s:isNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff && bufname('%') !~# 'NERD_tree'
     if exists("g:nerdtree_sync_cursorline") && g:nerdtree_sync_cursorline == 1
-      NERDTreeFind
-      setlocal cursorline
-      wincmd p
+      try
+        NERDTreeFind
+        setlocal cursorline
+        wincmd p
+      endtry
     endif
   endif
 endfunction
