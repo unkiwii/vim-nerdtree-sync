@@ -16,8 +16,10 @@ function! s:syncTree()
     if exists("g:nerdtree_sync_cursorline") && g:nerdtree_sync_cursorline == 1
       try
         NERDTreeFind
-        setlocal cursorline
-        wincmd p
+        if bufname('%') =~# 'NERD_tree'
+          setlocal cursorline
+          wincmd p
+        endif
       endtry
     endif
   endif
